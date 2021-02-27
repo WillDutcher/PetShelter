@@ -20,11 +20,16 @@ const AllPets = (props) => {
         <div>
             <div className="d-flex justify-content-between">
                 <h1 className="d-block">Pet Shelter</h1>
-                { window.location.href === 'http://localhost:3000/' ? 
+                {/* { window.location.href === 'http://localhost:3000/' ? 
+                    <Link to={ `/pets/new` }>add a pet to the shelter</Link>
+                    : <Link className="d-block" to={ `/` }>back to home</Link>
+                } */}
+                { window.location.href === 'http://3.138.140.202/' ? 
                     <Link to={ `/pets/new` }>add a pet to the shelter</Link>
                     : <Link className="d-block" to={ `/` }>back to home</Link>
                 }
             </div>
+            <Link to={ `/pets/new` }>add a pet to the shelter</Link>
             <h2>These pets are looking for a good home</h2>
             <table id="" className="table table-striped table-bordered table-hover mt-3">
                 <thead>
