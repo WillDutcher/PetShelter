@@ -29,8 +29,8 @@ const AllPets = (props) => {
                     : <Link className="d-block" to={ `/` }>back to home</Link>
                 }
             </div>
-	    <h5><Link to={ '/pets/new' }>add a pet to the shelter</Link></h5>
-            <Link to={ `/pets/new` }>add a pet to the shelter</Link>
+            {/* <h5><Link to={ '/pets/new' }>add a pet to the shelter</Link></h5> */}
+            {/* <Link to={ `/pets/new` }>add a pet to the shelter</Link> */}
             <h2>These pets are looking for a good home</h2>
             <table id="" className="table table-striped table-bordered table-hover mt-3">
                 <thead>
